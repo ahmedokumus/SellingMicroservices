@@ -9,8 +9,8 @@ public class SubscriptionInfo
         HandlerType = handlerType ?? throw new ArgumentNullException(nameof(handlerType));
     }
 
-    public static SubscriptionInfo Typed(Type HandlerType)
+    public static SubscriptionInfo Typed(Type handlerType)
     {
-        return new SubscriptionInfo(HandlerType);
+        return new SubscriptionInfo(handlerType);
     }
 }
