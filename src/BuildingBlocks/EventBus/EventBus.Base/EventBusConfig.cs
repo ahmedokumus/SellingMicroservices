@@ -2,8 +2,8 @@
 
 public class EventBusConfig
 {
-    public int ConnectionRetryCount { get; set; } = 5;
-    public string? DefaultTopicName { get; set; } = "SellingEventBus";
+    public static int ConnectionRetryCount { get; set; } = 5;
+    public static string? DefaultTopicName { get; set; } = "SellingEventBus";
     public string EventBusConnectionString { get; set; } = string.Empty;
     public string SubscriberClientAppName { get; set; } = string.Empty;
     public string EventNamePrefix { get; set; } = string.Empty;
